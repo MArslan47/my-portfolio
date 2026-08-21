@@ -2,6 +2,7 @@ import {
   FiNavigation, FiBookOpen, FiHeart, FiTool, FiCalendar, FiDollarSign,
 } from 'react-icons/fi'
 import { FaGooglePlay, FaApple } from 'react-icons/fa'
+import { handleTiltMove, handleTiltLeave } from '../utils/tilt'
 
 const LIVE_APPS = [
   {
@@ -62,7 +63,12 @@ export default function Apps() {
 
         <div className="apps__grid">
           {LIVE_APPS.map(({ icon, title, desc, playLink, iosLink }) => (
-            <div key={title} className="app-card">
+            <div
+              key={title}
+              className="app-card tilt-card"
+              onMouseMove={handleTiltMove}
+              onMouseLeave={handleTiltLeave}
+            >
               <div className="app-card__icon">{icon}</div>
               <div className="app-card__title">{title}</div>
               <p className="app-card__desc">{desc}</p>

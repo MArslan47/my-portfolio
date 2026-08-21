@@ -1,4 +1,5 @@
 import { FiSmartphone, FiDatabase, FiCreditCard, FiLayers } from 'react-icons/fi'
+import { handleTiltMove, handleTiltLeave } from '../utils/tilt'
 
 const DOMAINS = [
   {
@@ -65,7 +66,12 @@ export default function About() {
           {/* Right — domain cards */}
           <div className="about__domain-grid">
             {DOMAINS.map(({ icon, title, desc }) => (
-              <div key={title} className="domain-card">
+              <div
+                key={title}
+                className="domain-card tilt-card"
+                onMouseMove={handleTiltMove}
+                onMouseLeave={handleTiltLeave}
+              >
                 <div className="domain-card__icon">{icon}</div>
                 <h4>{title}</h4>
                 <p>{desc}</p>

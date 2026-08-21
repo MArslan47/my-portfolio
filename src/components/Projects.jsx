@@ -3,6 +3,7 @@ import {
   FiNavigation, FiBookOpen, FiDollarSign, FiHeart,
   FiTool, FiCalendar, FiShoppingBag, FiExternalLink, FiFileText,
 } from 'react-icons/fi'
+import { handleTiltMove, handleTiltLeave } from '../utils/tilt'
 
 const ALL_PROJECTS = [
   {
@@ -146,7 +147,12 @@ export default function Projects() {
 
         <div className="projects__grid">
           {visible.map(({ icon, category, title, desc, bullets, tags, link }) => (
-            <div key={title} className="project-card">
+            <div
+              key={title}
+              className="project-card tilt-card"
+              onMouseMove={handleTiltMove}
+              onMouseLeave={handleTiltLeave}
+            >
               <div className="project-card__top">
                 <div className="project-card__icon">{icon}</div>
                 <span className="project-card__cat">{category}</span>

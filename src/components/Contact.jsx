@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiPhone, FiSend } from 'react-icons/fi'
+import { handleTiltMove, handleTiltLeave } from '../utils/tilt'
 
 const CONTACT_DETAILS = [
   { icon: <FiMail />,     label: 'EMAIL',    value: 'marslanch7@gmail.com' },
@@ -38,7 +39,11 @@ export default function Contact() {
         <div className="contact__grid">
           {/* Left — contact details */}
           <div>
-            <div className="contact-info">
+            <div
+              className="contact-info tilt-card"
+              onMouseMove={handleTiltMove}
+              onMouseLeave={handleTiltLeave}
+            >
               <h3>Contact details</h3>
               {CONTACT_DETAILS.map(({ icon, label, value }) => (
                 <div key={label} className="contact-detail">
@@ -62,7 +67,11 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="contact-prefs">
+            <div
+              className="contact-prefs tilt-card"
+              onMouseMove={handleTiltMove}
+              onMouseLeave={handleTiltLeave}
+            >
               <h4>Working preferences</h4>
               <ul>
                 <li>Open to remote, hybrid, and contract roles</li>
@@ -73,7 +82,11 @@ export default function Contact() {
           </div>
 
           {/* Right — form */}
-          <div className="contact-form-card">
+          <div
+            className="contact-form-card tilt-card"
+            onMouseMove={handleTiltMove}
+            onMouseLeave={handleTiltLeave}
+          >
             {sent ? (
               <div className="form-success">
                 ✓ Message sent! I'll get back to you within 24 hours.

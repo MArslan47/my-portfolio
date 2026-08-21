@@ -1,4 +1,5 @@
 import { FiBriefcase, FiMapPin, FiCalendar } from 'react-icons/fi'
+import { handleTiltMove, handleTiltLeave } from '../utils/tilt'
 
 const EXPERIENCES = [
   {
@@ -66,7 +67,11 @@ export default function Experience() {
                 <div className="exp-entry__line" />
               </div>
 
-              <div className="exp-card">
+              <div
+                className="exp-card tilt-card"
+                onMouseMove={handleTiltMove}
+                onMouseLeave={handleTiltLeave}
+              >
                 <div className="exp-card__top">
                   <div className="exp-card__role">
                     {role}{' '}

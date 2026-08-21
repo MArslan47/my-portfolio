@@ -1,5 +1,6 @@
 import { SiFlutter, SiDart, SiFirebase, SiSupabase, SiStripe, SiGithub, SiPostman } from 'react-icons/si'
 import { FiWifi, FiBell, FiSmartphone, FiCode, FiMap, FiCreditCard, FiLock, FiKey, FiMonitor, FiPackage } from 'react-icons/fi'
+import { handleTiltMove, handleTiltLeave } from '../utils/tilt'
 
 const CATEGORIES = [
   {
@@ -63,7 +64,12 @@ export default function Skills() {
 
         <div className="skills__grid">
           {CATEGORIES.map(({ title, items }) => (
-            <div key={title} className="skill-category">
+            <div
+              key={title}
+              className="skill-category tilt-card"
+              onMouseMove={handleTiltMove}
+              onMouseLeave={handleTiltLeave}
+            >
               <div className="skill-category__head">
                 <span className="skill-category__title">{title}</span>
                 <span className="skill-category__count">{items.length}</span>
