@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Arslan — Flutter Developer Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5pt;
+      color: #111;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 14mm 16mm;
+    }
+
+    /* ── HEADER ── */
+    .header { text-align: center; margin-bottom: 10px; }
+    .header h1 { font-size: 20pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .header .title { font-size: 10.5pt; font-weight: 600; color: #444; margin: 3px 0 6px; letter-spacing: 0.5px; }
+    .header .contact {
+      font-size: 9.5pt;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0 14px;
+    }
+    .header .contact a { color: #333; text-decoration: none; }
+
+    /* ── DIVIDER ── */
+    hr { border: none; border-top: 1.5px solid #111; margin: 7px 0; }
+    .hr-thin { border-top: 0.75px solid #bbb; margin: 5px 0; }
+
+    /* ── SECTION ── */
+    .section { margin-bottom: 10px; }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 5px;
+    }
+
+    /* ── SUMMARY ── */
+    .summary p { font-size: 10pt; color: #222; }
+
+    /* ── SKILLS ── */
+    .skills-grid { display: flex; flex-direction: column; gap: 3px; }
+    .skill-row { font-size: 9.5pt; }
+    .skill-row strong { font-weight: 700; }
+
+    /* ── EXPERIENCE ── */
+    .exp-entry { margin-bottom: 9px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .exp-role { font-size: 10.5pt; font-weight: 700; }
+    .exp-company { font-size: 10.5pt; font-weight: 700; }
+    .exp-period { font-size: 9.5pt; color: #444; white-space: nowrap; }
+    .exp-bullets { margin-top: 3px; padding-left: 16px; }
+    .exp-bullets li { font-size: 9.5pt; margin-bottom: 2px; }
+
+    /* ── EDUCATION ── */
+    .edu-entry { display: flex; justify-content: space-between; margin-bottom: 5px; }
+    .edu-left .degree { font-size: 10pt; font-weight: 700; }
+    .edu-left .school { font-size: 9.5pt; color: #333; }
+    .edu-left .detail { font-size: 9.5pt; color: #555; }
+    .edu-right { font-size: 9.5pt; color: #444; text-align: right; white-space: nowrap; }
+
+    /* ── PROJECTS ── */
+    .project-entry { margin-bottom: 10px; }
+    .project-name { font-size: 10.5pt; font-weight: 700; margin-bottom: 3px; }
+    .project-bullets { padding-left: 16px; margin-bottom: 3px; }
+    .project-bullets li { font-size: 9.5pt; margin-bottom: 2px; }
+    .project-links { font-size: 9pt; color: #333; }
+    .project-links a { color: #333; text-decoration: none; }
+    .project-links span { margin-right: 4px; font-weight: 600; }
+
+    /* ── LINKS SECTION ── */
+    .links-list { list-style: none; padding: 0; }
+    .links-list li { font-size: 9.5pt; margin-bottom: 3px; }
+    .links-list li strong { font-weight: 700; }
+    .links-list a { color: #111; text-decoration: none; }
+
+    /* ── PAGE BREAK ── */
+    .page-break { page-break-before: always; }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 12mm 15mm; }
+      .page-break { page-break-before: always; }
+      a { color: #111 !important; text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     PAGE 1
+══════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Muhammad Arslan</h1>
+    <div class="title">Flutter Developer &nbsp;|&nbsp; iOS &amp; Android Developer</div>
+    <div class="contact">
+      <span>+92 333-5534747</span>
+      <span>marslanch7@gmail.com</span>
+      <span>Faisalabad, Pakistan</span>
+      <span><a href="https://muhammad-arslan-dev.vercel.app">muhammad-arslan-dev.vercel.app</a></span>
+    </div>
+    <div class="contact" style="margin-top:3px;">
+      <span><a href="https://linkedin.com/in/muhammad-arslan-4b9499317">linkedin.com/in/muhammad-arslan-4b9499317</a></span>
+      <span><a href="https://github.com/MArslan47">github.com/MArslan47</a></span>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Flutter Developer with 2.5+ years of professional experience building cross-platform iOS and Android mobile applications.
+      Delivered 10+ production-ready apps across fintech, EdTech, healthcare, and e-commerce domains. Expert in Flutter, Dart,
+      Firebase, GetX, REST APIs, and clean architecture. Currently serving as Team Lead at SLYK Design Studio with a track record
+      of promotions from Intern to Junior to Senior to Team Lead. Passionate about building performant, user-focused mobile
+      products with clean, maintainable code.
+    </p>
+  </div>
+
+  <hr />
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><strong>Mobile Development:</strong> Flutter, Dart, iOS Development, Android Development, Cross-platform Development</div>
+      <div class="skill-row"><strong>State Management:</strong> GetX, Provider, BLoC, Riverpod</div>
+      <div class="skill-row"><strong>Backend &amp; Databases:</strong> Firebase (Firestore, Auth, FCM, Cloud Functions), Supabase, REST APIs, Real-time Databases, PowerSync</div>
+      <div class="skill-row"><strong>Payments &amp; Compliance:</strong> Stripe, Stripe Connect, Tap to Pay, PayTab, HMRC Making Tax Digital (MTD), VAT Submission</div>
+      <div class="skill-row"><strong>Architecture:</strong> Clean Architecture, MVVM, MVC, Repository Pattern, Dependency Injection</div>
+      <div class="skill-row"><strong>APIs &amp; SDKs:</strong> Google Maps SDK, Push Notifications (FCM), WebView, QR Code Scanner, Biometric Auth, Google/Apple Sign-In</div>
+      <div class="skill-row"><strong>Tools:</strong> Git, GitHub, Figma, VS Code, Android Studio, Xcode, Postman</div>
+      <div class="skill-row"><strong>Soft Skills:</strong> Team Leadership, Agile/Scrum, Cross-functional Collaboration, Code Review, Project Management</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Flutter Developer (Team Lead) &nbsp;—&nbsp; <span class="exp-company">SLYK Design Studio</span></span>
+        <span class="exp-period">Dec 2024 – Present &nbsp;|&nbsp; Onsite</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>Progressed from Intermediate Flutter Developer → Senior Flutter Developer → Team Lead within the same company.</li>
+        <li>Leading development of multiple simultaneous projects across fintech, EdTech, e-commerce, and women-specific app domains.</li>
+        <li>Architected scalable Flutter solutions using clean architecture, GetX state management, and modular design patterns.</li>
+        <li>Delivered 2 high-quality projects under senior supervision before receiving promotion to Team Lead role.</li>
+        <li>Collaborating with design and backend teams in Agile sprints to ensure timely, high-quality product delivery.</li>
+      </ul>
+    </div>
+
+    <div class="hr-thin"></div>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Flutter Developer &nbsp;—&nbsp; <span class="exp-company">Alright Tech Pvt Ltd</span></span>
+        <span class="exp-period">Oct 2023 – Nov 2024 &nbsp;|&nbsp; Onsite</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>Joined as Flutter Intern; promoted to Junior Flutter Developer based on strong early performance.</li>
+        <li>Collaborated with senior developers on 3+ mobile and web projects from UI to deployment.</li>
+        <li>Built e-commerce solutions and various small to medium-scale Flutter applications.</li>
+        <li>Final Year Project selected in Top 10 at university house-job display event among all submissions.</li>
+        <li>Gained hands-on experience in Firebase, REST API integration, and GetX state management.</li>
+      </ul>
+    </div>
+
+    <div class="hr-thin"></div>
+
+    <div class="exp-entry" style="margin-bottom:0;">
+      <div class="exp-header">
+        <span class="exp-role">Intern &nbsp;—&nbsp; <span class="exp-company">State Life Insurance Corporation of Pakistan</span></span>
+        <span class="exp-period">Jul 2023 – Sep 2023 &nbsp;|&nbsp; Onsite</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>Completed 3-month internship in documentation, data management, and administrative operations.</li>
+        <li>Developed professional communication, MS Word, and Excel skills in a corporate environment.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="edu-entry">
+      <div class="edu-left">
+        <div class="degree">BS Software Engineering (4 Year)</div>
+        <div class="school">PMAS Arid Agriculture University (UAJK)</div>
+        <div class="detail">CGPA: 2.83 &nbsp;|&nbsp; Final Year Project selected in Top 10 at university display event</div>
+      </div>
+      <div class="edu-right">2020 – 2024</div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="edu-left">
+        <div class="degree">F.Sc Pre-Engineering</div>
+        <div class="school">Punjab Group of Colleges, Bhakkar</div>
+        <div class="detail">898/1100 (82%)</div>
+      </div>
+      <div class="edu-right">2018 – 2020</div>
+    </div>
+
+    <div class="edu-entry" style="margin-bottom:0;">
+      <div class="edu-left">
+        <div class="degree">Matric (Science)</div>
+        <div class="school">Govt. CTTM High School, Bhakkar</div>
+        <div class="detail">977/1100 (86%)</div>
+      </div>
+      <div class="edu-right">2016 – 2018</div>
+    </div>
+  </div>
+
+</div><!-- end page 1 -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE 2 — PROJECTS (1–3)
+══════════════════════════════════════════ -->
+<div class="page page-break">
+
+  <div class="header" style="margin-bottom:8px;">
+    <h1>Muhammad Arslan</h1>
+    <div class="title">Flutter Developer — Projects</div>
+  </div>
+
+  <hr />
+
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <!-- PROJECT 1 -->
+    <div class="project-entry">
+      <div class="project-name">1. Taxara — AI-Powered Accounting &amp; Tax Management App (UK)</div>
+      <ul class="project-bullets">
+        <li>Built a full-stack Flutter accounting app for UK self-employed individuals and landlords with AI-powered bookkeeping that auto-categorises transactions and tracks income/expenses.</li>
+        <li>Implemented HMRC Making Tax Digital (MTD) compliance module with direct VAT return submission, tax obligation tracking, and full MTD API integration.</li>
+        <li>Integrated Stripe payments with Tap to Pay contactless terminal support and Stripe Connect for seamless client billing and payout management.</li>
+        <li>Built a document management system for uploading and organising receipts, bank statements, and tax documents with advanced search and filtering.</li>
+        <li>Used Supabase with PowerSync for real-time offline sync; Firebase for authentication and push notifications.</li>
+        <li>Implemented biometric login, PIN lock, Google Sign-In, and Apple Sign-In for secure, frictionless access.</li>
+      </ul>
+      <div class="project-links">
+        <span>Play Store:</span><a href="https://play.google.com/store/apps/details?id=com.afiniti.taxara">play.google.com/store/apps/details?id=com.afiniti.taxara</a>
+        &nbsp;&nbsp;
+        <span>App Store:</span><a href="https://apps.apple.com/pk/app/taxara-bookkeeping/id6737125416">apps.apple.com/pk/app/taxara-bookkeeping/id6737125416</a>
+      </div>
+    </div>
+
+    <div class="hr-thin"></div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-entry">
+      <div class="project-name">2. MV Accountancy — Finance Transaction Tracker &amp; Admin Panel</div>
+      <ul class="project-bullets">
+        <li>Developed a full-stack Flutter finance tracking application with a dedicated client app and a separate responsive admin panel for UK-based accountancy use.</li>
+        <li>Built secure client login using unique Client IDs with category-based income and expense tracking (rent, fuel, maintenance) and automatic date stamping.</li>
+        <li>Enforced a submission-only transaction policy ensuring data integrity — users cannot edit or delete records after submission.</li>
+        <li>Designed a fully responsive Admin Panel with client search by ID and flexible date filtering (day, week, month, quarter, year, and custom date range).</li>
+        <li>Enabled Excel export of filtered transaction data for financial review and record-keeping.</li>
+        <li>Used Firebase for real-time data storage, user authentication, and seamless cross-platform data retrieval.</li>
+      </ul>
+      <div class="project-links">
+        <span>Play Store:</span><a href="https://play.google.com/store/apps/details?id=uk.co.mvaccountancy.client">play.google.com/store/apps/details?id=uk.co.mvaccountancy.client</a>
+      </div>
+    </div>
+
+    <div class="hr-thin"></div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-entry">
+      <div class="project-name">3. Boost My Maths — UK-Based Gamified Math Learning App for Children</div>
+      <ul class="project-bullets">
+        <li>Built an interactive Flutter math app for UK school children structured by school years, each containing levels with unique quizzes and practice exercises.</li>
+        <li>Developed an AI Math Gym that unlocks after completing all levels, offering easy, medium, and hard AI-generated math questions for advanced practice.</li>
+        <li>Implemented a detailed progress tracking system showing quiz results, improvement charts, and learning milestones for parents and children.</li>
+        <li>Added a Games Section with creativity-boosting math games including Hit the Button, 3 in a Row, and a Snake-style math game.</li>
+        <li>Integrated Firebase for user authentication, progress data sync, and real-time performance tracking.</li>
+      </ul>
+      <div class="project-links">
+        <span>Play Store:</span><a href="https://play.google.com/store/apps/details?id=com.boostmymaths.app">play.google.com/store/apps/details?id=com.boostmymaths.app</a>
+        &nbsp;&nbsp;
+        <span>App Store:</span><a href="https://apps.apple.com/pk/app/boost-my-maths-practice-maths/id6749534776">apps.apple.com/pk/app/boost-my-maths-practice-maths/id6749534776</a>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end page 2 -->
+
+
+<!-- ══════════════════════════════════════════
+     PAGE 3 — PROJECTS (4–5) + LINKS
+══════════════════════════════════════════ -->
+<div class="page page-break">
+
+  <div class="header" style="margin-bottom:8px;">
+    <h1>Muhammad Arslan</h1>
+    <div class="title">Flutter Developer — Projects &amp; Links</div>
+  </div>
+
+  <hr />
+
+  <div class="section">
+    <div class="section-title">Projects (continued)</div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-entry">
+      <div class="project-name">4. Midnight Mums Club — Maternal Health &amp; Community Support App</div>
+      <ul class="project-bullets">
+        <li>Developed a Flutter health and community support app specifically for pregnant women and new mothers in the UK.</li>
+        <li>Integrated an AI chatbot for real-time health queries, guidance, and emergency alert functionality for immediate assistance.</li>
+        <li>Built community and peer-support features connecting mothers with experts, support groups, and health resources.</li>
+        <li>Implemented Firebase backend for real-time messaging, push notifications, and secure user authentication.</li>
+        <li>Designed intuitive, calming UI/UX with a focus on accessibility and ease of use for new mothers.</li>
+      </ul>
+      <div class="project-links">
+        <span>Play Store:</span><a href="https://play.google.com/store/apps/details?id=com.afinitiglobal.mums_club">play.google.com/store/apps/details?id=com.afinitiglobal.mums_club</a>
+        &nbsp;&nbsp;
+        <span>App Store:</span><a href="https://apps.apple.com/pk/app/midnight-mums-club/id6748643951">apps.apple.com/pk/app/midnight-mums-club/id6748643951</a>
+      </div>
+    </div>
+
+    <div class="hr-thin"></div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-entry">
+      <div class="project-name">5. Sand &amp; Fun — General Aviation Airshow Event App (Saudi Arabia, 2025)</div>
+      <ul class="project-bullets">
+        <li>Built a comprehensive Flutter event management app for the Saudi Air Show (Nov–Dec 2025) supporting multiple user roles: Visitors, Security, Managers, VIPs, and CEO.</li>
+        <li>Implemented a multi-role QR code access control system granting zone-specific entry permissions for secure event management.</li>
+        <li>Developed an interactive event map via WebView displaying all locations, stalls, navigation paths, and real-time announcements.</li>
+        <li>Built a full ticketing system with Gold, Adult, and Children categories; integrated PayTab for secure payments with ticket transfer support.</li>
+        <li>Created an advanced QR scanner module that identifies and displays detailed data for 100+ aircraft from a built-in database.</li>
+      </ul>
+      <div class="project-links">
+        <span>Play Store:</span><a href="https://play.google.com/store/apps/details?id=com.sandfun.SandFunApp">play.google.com/store/apps/details?id=com.sandfun.SandFunApp</a>
+        &nbsp;&nbsp;
+        <span>App Store:</span><a href="https://apps.apple.com/pk/app/general-aviation-airshow-2026/id6744918197">apps.apple.com/pk/app/general-aviation-airshow-2026/id6744918197</a>
+      </div>
+    </div>
+
+  </div>
+
+  <hr />
+
+  <!-- LIVE PROJECT LINKS -->
+  <div class="section">
+    <div class="section-title">Live Project Links</div>
+    <ul class="links-list">
+      <li><strong>Taxara (Play Store):</strong> <a href="https://play.google.com/store/apps/details?id=com.afiniti.taxara">play.google.com/store/apps/details?id=com.afiniti.taxara</a></li>
+      <li><strong>Taxara (App Store):</strong> <a href="https://apps.apple.com/pk/app/taxara-bookkeeping/id6737125416">apps.apple.com/pk/app/taxara-bookkeeping/id6737125416</a></li>
+      <li><strong>MV Accountancy (Play Store):</strong> <a href="https://play.google.com/store/apps/details?id=uk.co.mvaccountancy.client">play.google.com/store/apps/details?id=uk.co.mvaccountancy.client</a></li>
+      <li><strong>Boost My Maths (Play Store):</strong> <a href="https://play.google.com/store/apps/details?id=com.boostmymaths.app">play.google.com/store/apps/details?id=com.boostmymaths.app</a></li>
+      <li><strong>Boost My Maths (App Store):</strong> <a href="https://apps.apple.com/pk/app/boost-my-maths-practice-maths/id6749534776">apps.apple.com/pk/app/boost-my-maths-practice-maths/id6749534776</a></li>
+      <li><strong>Midnight Mums Club (Play Store):</strong> <a href="https://play.google.com/store/apps/details?id=com.afinitiglobal.mums_club">play.google.com/store/apps/details?id=com.afinitiglobal.mums_club</a></li>
+      <li><strong>Midnight Mums Club (App Store):</strong> <a href="https://apps.apple.com/pk/app/midnight-mums-club/id6748643951">apps.apple.com/pk/app/midnight-mums-club/id6748643951</a></li>
+      <li><strong>Sand &amp; Fun (Play Store):</strong> <a href="https://play.google.com/store/apps/details?id=com.sandfun.SandFunApp">play.google.com/store/apps/details?id=com.sandfun.SandFunApp</a></li>
+      <li><strong>Sand &amp; Fun (App Store):</strong> <a href="https://apps.apple.com/pk/app/general-aviation-airshow-2026/id6744918197">apps.apple.com/pk/app/general-aviation-airshow-2026/id6744918197</a></li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <!-- PERSONAL LINKS -->
+  <div class="section">
+    <div class="section-title">Personal Links</div>
+    <ul class="links-list">
+      <li><strong>Portfolio:</strong> <a href="https://muhammad-arslan-dev.vercel.app">https://muhammad-arslan-dev.vercel.app</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/muhammad-arslan-4b9499317">https://linkedin.com/in/muhammad-arslan-4b9499317</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/MArslan47">https://github.com/MArslan47</a></li>
+      <li><strong>Email:</strong> marslanch7@gmail.com</li>
+      <li><strong>Phone:</strong> +92 333-5534747</li>
+    </ul>
+  </div>
+
+</div><!-- end page 3 -->
+
+</body>
+</html>
